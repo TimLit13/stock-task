@@ -31,4 +31,6 @@ update_for_stock.length.times do |i|
   current_stock.push(update_for_stock[i]) unless flag
 end
 
-# puts current_stock.inspect
+current_stock.each do |item|
+  puts item.join(',')
+end
